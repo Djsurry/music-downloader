@@ -4,8 +4,8 @@ Downloads music to be added to spotify
 
 ## Setup
 1. Dependacies
-    - `youtube_dl`, `pip3 install youtube_dl`
-    - `BeautifulSoup`, `pip3 install beautifulsoup4`
+    - `youtube_dl` install with `pip3 install youtube_dl`
+    - `BeautifulSoup` install with `pip3 install beautifulsoup4`
 2. Environment Variables
     - You have to export the envirnment variable `MUSIC`. This is the directory where the songs will be downloaded
     - `export MUSIC=/Users/david/Music/import-to-spotify`
