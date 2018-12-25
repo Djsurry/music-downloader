@@ -18,7 +18,7 @@ Simply run the file with `python3 download.py`. It will then prompt you for inpu
     - this url must be in the format `https://youtube.com/watch?v=SOMEVIDEO`
     - Will download directly from this video
 2. Search Query
-    - You can also enter a search, such as `forever drake`. This will take the top result
+    - You can also enter a search, such as `forever drake`. This will take the top result after searching on youtube
     - Anything that doesnt match the url format will be treated as a search query
 The file will be downloaded and moved the the directory specified in the `MUSIC` env variable. Then it will show up in spotify to be added to playlists
 
