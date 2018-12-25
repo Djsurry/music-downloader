@@ -10,7 +10,7 @@ Downloads music to be added to spotify
     - You have to export the envirnment variable `MUSIC`. This is the directory where the songs will be downloaded. Ex.
     - `export MUSIC=/Users/david/Music/import-to-spotify`
 3. Spotify
-    - On desktop, go to `Settings -> Local Files -> Add source`. Select the file you exported in the environment varible earlier
+    - On desktop, go to `Settings -> Local Files -> Add source`. Select the directroy you exported in the environment varible earlier
 
 ## Usage
 Simply run the file with `python3 download.py`. It will then prompt you for input. The choices are as follows
