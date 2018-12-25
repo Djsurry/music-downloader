@@ -10,7 +10,7 @@ Downloads music to be added to spotify
     - You have to export the envirnment variable `MUSIC`. This is the directory where the songs will be downloaded
     - `export MUSIC=/Users/david/Music/import-to-spotify`
 3. Spotify
-    - On desktop, go to settings -> Local Files -> Add source. Select the file you exported in the environment varible earlier
+    - On desktop, go to `Settings -> Local Files -> Add source`. Select the file you exported in the environment varible earlier
 
 ## Usage
 Simply run the file with `python3 download.py`. It will then prompt you for input. The choices are as follows
@@ -20,6 +20,12 @@ Simply run the file with `python3 download.py`. It will then prompt you for inpu
 2. Search Query
     - You can also enter a search, such as `forever drake`. This will take the top result
     - Anything that doesnt match the url format will be treated as a search query
+The file will be downloaded and moved the the directory specified in the `MUSIC` env variable. Then it will show up in spotify to be added to playlists
+
+## Troubleshootting
+1. Make sure url is legitamate. Use a web browser to check
+2. Make sure your env varible is exported correctly, try `echo $MUSIC` and make sure its what you want
+3. Refresh spotify local files by disabling your folder and re enabling it in `Settings -> Local Files`
 
 
 
