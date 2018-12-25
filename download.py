@@ -30,7 +30,8 @@ def download(url):
     
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
-    
+        info_dict = ydl.extract_info(url, download=False)
+        artist = info_dict["uploader"]
 
     filename = [n for n in os.listdir() if n not in old_dir][0]
     
@@ -45,6 +46,8 @@ def download(url):
     new = escaped_filename[:len(escaped_filename)-index-1] + '.mp3'
     # renames file
     os.system("mv {old} {new}".format(old=escaped_filename, new=new))
+    # Adds artist tag
+    os.system("id3tag --artist=\"{artist}\" {file}".format(artist=artist, file=new))
     return new
 
 def main():
