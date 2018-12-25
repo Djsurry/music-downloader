@@ -68,7 +68,6 @@ def main():
     else:
         url = get_top(query)
         if url:
-            print("HERE")
             file = download(url)
         else:
             print("Invalid search term. Exiting...")
