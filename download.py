@@ -51,9 +51,6 @@ def main():
     if not os.getenv("MUSIC"):
         print("Please export the envirnment varible music. Exiting...")
         exit()
-    if "downloaded-music" in os.listdir():
-        print("Please move or rename the file downloaded-music from the CWD. Exiting...")
-        exit()
 
     query = input("Search video or direct youtube link: ")
     if "https://" in query and 'youtube' in query and 'watch' in query:
