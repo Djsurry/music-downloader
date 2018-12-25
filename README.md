@@ -7,7 +7,7 @@ Downloads music to be added to spotify
     - `youtube_dl` install with `pip3 install youtube_dl`
     - `BeautifulSoup` install with `pip3 install beautifulsoup4`
 2. Environment Variables
-    - You have to export the envirnment variable `MUSIC`. This is the directory where the songs will be downloaded
+    - You have to export the envirnment variable `MUSIC`. This is the directory where the songs will be downloaded. Ex.
     - `export MUSIC=/Users/david/Music/import-to-spotify`
 3. Spotify
     - On desktop, go to `Settings -> Local Files -> Add source`. Select the file you exported in the environment varible earlier
